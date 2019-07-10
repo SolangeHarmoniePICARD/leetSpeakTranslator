@@ -5,17 +5,40 @@
     <meta charset="utf-8">
     <title>Leet Speak / 1337 5p34k</title>
     <meta name="author" lang="fr" content="Solange Harmonie PICARD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="leet.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body>
-
-    <form>
-        <p type="Message:"><textarea id="message"  placeholder="Tapez du texte"></textarea></p>
-        <p type="Traduction :"><span class="span" id="result"></span></p>
-        <input type="button" id="button" value="Traduire">
-    </form>
+    <div class="container min-vh-100 d-flex flex-column align-content-center">
+     <div class="row flex-grow-1 d-flex justify-content-center align-items-center">
+       <div class="col-12 col-md-4">
+         <div class="card center-block">
+           <div class="card-header">
+             <h3 class="text-center text-primary font-weight-bold">Leet Speak</h3>
+           </div>
+           <div class="card-body">
+              <p class="card-text text-justify">
+                 Le leet speak est un système d'écriture utilisant les caractères alphanumériques ASCII d'une manière peu compréhensible pour le néophyte.
+              </p>
+              <p class="card-text text-justify">
+                 Cette application traduit le texte renseigné par l'utilisateur en leet speak, et inversement.
+              </p>
+             <div class="form-group">
+              <form>
+                <input style="width: 100%;" type="text" id="message" placeholder="Tapez votre texte." required>
+                <br><br>
+                <input id="button" type="button" class="btn btn-outline-primary btn-lg btn-block" value="Traduire">
+              </form>
+              <br><br>
+              <p id="result" class="text-success text-center"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="script.js"></script>
 
